@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Guess the Number Game</h1>
+  </header>
+
+  <div id="game">
+    <div id="login">
+      <input type="text" id="name" placeholder="Enter your name" />
+      <button id="join">Join Game</button>
+    </div>
+    <div id="gameArea" class="hidden">
+      <div id="players">
+        <h3>Players in the Game:</h3>
+      </div>
+      <div id="guessArea">
+        <p id="status"></p>
+        <input type="number" id="guess" placeholder="Enter your guess" />
+        <button id="submitGuess" disabled>Submit Guess</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Guess the Number. Built with love and Socket.IO.</p>
+  </footer>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
